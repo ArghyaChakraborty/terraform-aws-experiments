@@ -4,7 +4,7 @@ terraform {
     organization = "arghya_company"
 
     workspaces {
-      name = "terraform-experiments"
+      name = "terraform-experiments-cli"
     }
   }
   required_providers {
