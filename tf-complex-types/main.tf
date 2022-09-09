@@ -108,3 +108,7 @@ output "tuple_example_tuple_2" {
 output "tuple_example_tuple_2_first_element" {
   value = var.example_tuple_2[0]
 }
+
+output "tuple_z_seperator" {
+  value = "----------------------"
+}
