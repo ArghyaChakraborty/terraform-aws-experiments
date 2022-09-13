@@ -1,6 +1,8 @@
 /*
     Configure:
         #TODO
+        git tag v0.0.1
+        git push --tags
         
     Execute:
         terraform init
@@ -19,7 +21,7 @@ terraform {
 # Using tf module from local path
 module "local_module" {
   source = "./modules/simple_module"
-  name = "Anonymous"
+  name = "Local Anonymous"
 }
 output "local_module_output" {
   value = module.local_module.module_output
@@ -27,7 +29,14 @@ output "local_module_output" {
 
 # using tf module from public terraform repo
 
-# using tf module from public github repo
+# Using tf module from public github repo
+module "git_module" {
+  source = "git::https://github.com/ArghyaChakraborty/terraform-experiments.git//tf-module/modules/simple_module?ref=v0.0.1"
+  name = "Git Anonymous"
+}
+output "git_module_output" {
+  value = module.git_module.module_output
+}
 
 # Using count
 module "local_module_with_count" {
