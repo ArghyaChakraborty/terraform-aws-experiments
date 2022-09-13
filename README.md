@@ -6,3 +6,4 @@
 |[tf-functions](./tf-functions)|Exploring TF Functions||
 |[tf-complex-types](./tf-complex-types)|Exploring TF complex types||
 |[tf-remote-backend-s3](./tf-remote-backend-s3)|Exploring TF remote backend using AWS S3||
+|[tf-module](./tf-module)|Exploring TF modules||
