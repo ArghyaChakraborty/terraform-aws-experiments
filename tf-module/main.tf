@@ -14,7 +14,7 @@ output "local_module_output" {
 # Using tf module from public terraform registry
 module "terraform_module" {
   source  = "app.terraform.io/arghya_company/experiments/aws//tf-module/modules/simple_module"
-  version = "0.0.1"
+  version = "1.0.0"
   name = "Terraform Anonymous"
 }
 output "terraform_module_output" {
@@ -23,7 +23,7 @@ output "terraform_module_output" {
 
 # Using tf module from public github repo
 module "git_module" {
-  source = "git::https://github.com/ArghyaChakraborty/terraform-experiments.git//tf-module/modules/simple_module?ref=v0.0.1"
+  source = "git::https://github.com/ArghyaChakraborty/terraform-experiments.git//tf-module/modules/simple_module?ref=v1.0.0"
   name = "Git Anonymous"
 }
 output "git_module_output" {

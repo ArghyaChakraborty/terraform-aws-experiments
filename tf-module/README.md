@@ -4,9 +4,8 @@
 - `git add .`  
 - `git commit -m "Initial Commit"`  
 - `git push origin main`  
-- `git tag vx.y.x`  
+- `git tag v1.0.0`  
 - `git push --tags`  
-- Also replace `vx.y.z` in git module example's source (value of ref parameter) in `main.tf`  
 ### For using modules from Terraform registry
 - Login to https://app.terraform.io/ -> Registry -> Publish -> Module  
 - Connect to VCS -> GitHub -> GitHub.com (custom) -> Follow the instructions provided  
