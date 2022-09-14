@@ -11,7 +11,7 @@
   - `AWS_DEFAULT_REGION` (set target AWS region) choose `Environment` category  
   - `lambda_input_name` (some random name) choose `Terraform` category  
 ## Execute:
-- For the first time after the workspace is created: [Actions] -> [Start new run] -> Plan and apply (standard)  
+- For the first time after the workspace is created: `Actions` -> `Start new run` -> `Plan and apply (standard)`  
 - From next time onwards whenever a new push/merge to main branch happens, the workflow will automatically run  
 ## Observe:
 - The output of each run  
